@@ -267,7 +267,7 @@ class FetchRoute
                 'in'          => $route->methods()[0] !== 'GET' ? 'formData' : 'query',
                 'type'        => $this->recognizeFieldType($validation),
                 'required'    => Str::contains($validation, 'required'),
-                'description' => $request->attributes()[$rule] ?? $rule,
+                'description' => $request->attributes()[$rule] ?? $validation,
             ];
         }
 
