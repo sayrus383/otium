@@ -1,0 +1,27 @@
+{
+    "name": "sayrus/otium",
+    "description": "Package can generate api docs without any actions",
+    "license": "MIT",
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "Sayrus",
+            "email": "sayrus147@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sayrus\\Otium\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sayrus\\Otium\\ServiceProvider"
+            ]
+        }
+    }
+}
